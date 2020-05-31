@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #7c1599 0%, #921099 48%, #7e4ae8 100%);
+  display: flex;
+  color: white;
+}
+.videos {
+  list-style: inside square;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  width: 500px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0;
+  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+  border: 2px;
+}
+li {
+  border-bottom: 1px solid #efefef;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+li:last-child {
+  border-bottom: 0;
+}

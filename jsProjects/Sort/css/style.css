@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-size: contain, cover;
+  background: url("/images/band0.jpeg") center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bands {
+  list-style: inside square;
+  font-size: 20px;
+  background: #f8f8ff;
+  width: 500px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0;
+  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 2px;
+}
+#bands li {
+  border-bottom: 1px solid #efefef;
+  padding: 20px;
+}
+
+#bands li:last-child {
+  border-bottom: 0;
+}
+
+a {
+  color: #ffc600;
+  text-decoration: none;
+}

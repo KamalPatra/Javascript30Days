@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/javascript"
+      src="https://www.cornify.com/js/cornify.js"
+    ></script>
+    <title>KONAMI</title>
+  </head>
+  <body>
+    <p style="font-size: 30px; font-family: monospace;">
+      Type the Secret code kamaliscool and see the magic.
+    </p>
+    <script>
+      const pressed = [];
+      const secretCode = "kamaliscool";
+      window.addEventListener("keydown", (e) => {
+        console.log(e.key);
+        pressed.push(e.key);
+        pressed.splice(
+          -secretCode.length - 1,
+          pressed.length - secretCode.length
+        );
+        if (pressed.join("").includes(secretCode)) {
+          cornify_add();
+          console.log("DING DING!");
+        }
+        console.log(pressed);
+      });
+    </script>
+  </body>
+</html>
